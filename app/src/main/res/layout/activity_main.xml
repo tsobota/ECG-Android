@@ -6,77 +6,112 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/connectButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="518dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="30dp"
         android:text="Polacz"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="505dp" />
+        app:layout_constraintBottom_toTopOf="@+id/channel_1_Button"
+        app:layout_constraintEnd_toStartOf="@+id/runMeasurementButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/runMeasurementButton"
-        android:layout_width="153dp"
-        android:layout_height="49dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="518dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="30dp"
         android:text="Uruchom pomiar"
-        tools:layout_editor_absoluteX="244dp"
-        tools:layout_editor_absoluteY="504dp" />
+        app:layout_constraintBottom_toTopOf="@+id/channe_3_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/connectButton"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/channel_1_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="30dp"
         android:text="Odp:1"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="569dp" />
+        app:layout_constraintBottom_toTopOf="@+id/saveToSdCardButton"
+        app:layout_constraintEnd_toStartOf="@+id/channel_2_Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connectButton" />
 
     <Button
         android:id="@+id/channel_2_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="590dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="30dp"
         android:text="Odp:2"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="569dp" />
+        app:layout_constraintBottom_toTopOf="@+id/saveToFileButton"
+        app:layout_constraintEnd_toStartOf="@+id/channe_3_Button"
+        app:layout_constraintStart_toEndOf="@+id/channel_1_Button"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/channe_3_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="30dp"
         android:text="Odp:3"
-        tools:layout_editor_absoluteX="298dp"
-        tools:layout_editor_absoluteY="569dp" />
+        app:layout_constraintBottom_toTopOf="@+id/readFromSdCardButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/channel_2_Button"
+        app:layout_constraintTop_toBottomOf="@+id/runMeasurementButton" />
 
     <Button
         android:id="@+id/saveToFileButton"
-        android:layout_width="118dp"
-        android:layout_height="57dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="47dp"
         android:text="Zapis do pliku"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="636dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/readFromSdCardButton"
+        app:layout_constraintStart_toEndOf="@+id/saveToSdCardButton"
+        app:layout_constraintTop_toBottomOf="@+id/channel_2_Button" />
 
     <Button
         android:id="@+id/saveToSdCardButton"
-        android:layout_width="118dp"
-        android:layout_height="58dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="60dp"
         android:text="Zapis SD"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="636dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/saveToFileButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/channel_1_Button" />
 
     <Button
         android:id="@+id/readFromSdCardButton"
-        android:layout_width="118dp"
-        android:layout_height="58dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="60dp"
         android:text="Odczyt SD"
-        tools:layout_editor_absoluteX="279dp"
-        tools:layout_editor_absoluteY="636dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/saveToFileButton"
+        app:layout_constraintTop_toBottomOf="@+id/channe_3_Button" />
 
 </android.support.constraint.ConstraintLayout>
