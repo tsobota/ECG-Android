@@ -1,6 +1,7 @@
 package com.example.ecg_android;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +22,10 @@ public class MainActivity extends AppCompatActivity {
                 final CharSequence text = "Connect Button";
                 int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(context, text, duration);
+
+                connectButton.setBackgroundColor(Color.BLACK);
+                connectButton.setTextColor(Color.BLACK);
+
                 toast.show();
             }
         });
