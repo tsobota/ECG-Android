@@ -17,20 +17,17 @@ public class ConnectionButtonController extends AppCompatActivity implements Uti
     public Util_Button getInstance(){
         return instance;
     }
-    public void setOnClickAction(){
+    public Util_Button setOnClickAction(){
         instanceButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Context context = getApplicationContext();
                 final CharSequence text = "Connect Button";
                 int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(context, text, duration);
-
-                instanceButton.setBackgroundColor(Color.BLACK);
-                instanceButton.setTextColor(Color.BLACK);
-
                 toast.show();
             }
         });
+        return instance;
     }
 
     public Button getButton(){
