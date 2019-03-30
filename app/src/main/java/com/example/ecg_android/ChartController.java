@@ -1,9 +1,19 @@
 package com.example.ecg_android;
 
+
+
+
+import android.support.v7.app.AppCompatActivity;
+
+import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChartController {
+public class ChartController extends AppCompatActivity {
     private static ChartController instance = new ChartController();
     private ChartController(){}
     public static ChartController getInstance(){
@@ -26,9 +36,9 @@ public class ChartController {
             entries.add(new Entry(data.getValue(), data.getTime()));
         }
 
-        LineData dataSet = new LineDataSet(entries, "Label"); // add entries to dataset
-        dataSet.setColor();
-        dataSet.setValueTextColor(...); // styling, ...
+        LineDataSet dataSet = new LineDataSet(entries, "Label"); // add entries to dataset
+        dataSet.setColor(10);
+        dataSet.setValueTextColor(10); // styling, ...
 
         LineData lineData = new LineData(dataSet);
         chart.setData(lineData);
