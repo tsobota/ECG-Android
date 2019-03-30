@@ -36,7 +36,7 @@ public class ChartController {
         }
 
         LineDataSet dataSet = new LineDataSet(entries, "Label"); // add entries to dataset
-        dataSet.setColor(Color.BLACK;
+        dataSet.setColor(Color.BLACK);
         dataSet.setValueTextColor(Color.GREEN); // styling, ...
 
         LineData lineData = new LineData(dataSet);
