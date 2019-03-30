@@ -13,17 +13,13 @@ public class SaveToSdCardButtonController extends AppCompatActivity implements U
     private SaveToSdCardButtonController(){
         instanceButton = findViewById(BUTTON_NAME);
     }
-    public Util_Button getInstance(){
+    public static Util_Button getInstance(){
         return instance;
     }
     public Util_Button setOnClickAction(){
         instanceButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Context context = getApplicationContext();
-                final CharSequence text = "Connect Button";
-                int duration = Toast.LENGTH_SHORT;
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
+
             }
         });
         return instance;

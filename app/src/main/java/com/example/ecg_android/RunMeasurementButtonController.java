@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class RunMeasurementButtonController extends AppCompatActivity extends AppCompatActivity implements Util_Button {
+public class RunMeasurementButtonController extends AppCompatActivity implements Util_Button {
     private static Util_Button instance = new RunMeasurementButtonController();
     private final Button instanceButton;
     private final static int BUTTON_NAME = R.id.runMeasurementButton;
