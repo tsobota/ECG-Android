@@ -28,4 +28,8 @@ public class SaveToSdCardButtonController extends AppCompatActivity implements U
         });
         return instance;
     }
+
+    public Button getButton(){
+        return instanceButton;
+    }
 }

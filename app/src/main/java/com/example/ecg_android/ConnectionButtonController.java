@@ -1,7 +1,6 @@
 package com.example.ecg_android;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -20,16 +19,10 @@ public class ConnectionButtonController extends AppCompatActivity implements Uti
     public Util_Button setOnClickAction(){
         instanceButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Context context = getApplicationContext();
-                final CharSequence text = "Connect Button";
-                int duration = Toast.LENGTH_SHORT;
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
             }
         });
         return instance;
     }
-
     public Button getButton(){
         return instanceButton;
     }
