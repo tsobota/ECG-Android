@@ -9,6 +9,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        LayoutInitializer.doInit();
+
+        LayoutInitializer aa = new LayoutInitializer();
+        aa.doInit(findViewById(android.R.id.content));
     }
 }

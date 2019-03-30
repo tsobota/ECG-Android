@@ -1,9 +1,7 @@
 package com.example.ecg_android;
 
-
-
-
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.data.Entry;
@@ -13,15 +11,15 @@ import com.github.mikephil.charting.data.LineDataSet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChartController extends AppCompatActivity {
+public class ChartController {
     private static ChartController instance = new ChartController();
     private ChartController(){}
     public static ChartController getInstance(){
         return instance;
     }
 
-    public void runChart() {
-        final LineChart chart = (LineChart) findViewById(R.id.chart);
+    public void runChart(View view) {
+        final LineChart chart = view.findViewById(R.id.chart);
 
         MeasurementData[] dataObjects= new  MeasurementData[100];
         for(int i=0;i<dataObjects.length;i++) {
