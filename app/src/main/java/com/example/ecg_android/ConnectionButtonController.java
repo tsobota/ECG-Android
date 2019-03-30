@@ -13,7 +13,7 @@ public class ConnectionButtonController extends AppCompatActivity implements Uti
     private ConnectionButtonController(){
         instanceButton = findViewById(BUTTON_NAME);
     }
-    public Util_Button getInstance(){
+    public static Util_Button getInstance(){
         return instance;
     }
     public Util_Button setOnClickAction(){

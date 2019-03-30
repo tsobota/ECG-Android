@@ -11,7 +11,7 @@ public class Channe_3_ButtonController extends AppCompatActivity implements Util
     private Channe_3_ButtonController(){
         instanceButton = findViewById(BUTTON_NAME);
     }
-    public Util_Button getInstance(){
+    public static Util_Button getInstance(){
         return instance;
     }
     public Util_Button setOnClickAction(){
