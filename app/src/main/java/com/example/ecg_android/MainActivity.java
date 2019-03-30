@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        LayoutInitializer aa = new LayoutInitializer();
-        aa.doInit(findViewById(android.R.id.content));
+        LayoutInitializer aplikacja = new LayoutInitializer();
+        aplikacja.doInit(findViewById(android.R.id.content));
     }
 }

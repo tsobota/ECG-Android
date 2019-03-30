@@ -14,7 +14,7 @@ public class LayoutInitializer {
 //        buttonsSettings
 //        buttonsSettings
 //        buttonsSettings
-        
+
         ChartController.getInstance().runChart(view);
 
     }

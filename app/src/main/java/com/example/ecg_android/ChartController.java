@@ -1,5 +1,6 @@
 package com.example.ecg_android;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
@@ -35,8 +36,8 @@ public class ChartController {
         }
 
         LineDataSet dataSet = new LineDataSet(entries, "Label"); // add entries to dataset
-        dataSet.setColor(10);
-        dataSet.setValueTextColor(10); // styling, ...
+        dataSet.setColor(Color.BLACK;
+        dataSet.setValueTextColor(Color.GREEN); // styling, ...
 
         LineData lineData = new LineData(dataSet);
         chart.setData(lineData);
