@@ -6,107 +6,113 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/connectButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="400dp"
-        android:text="Polacz"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/runMeasurementButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="400dp"
-        android:layout_marginEnd="50dp"
-        android:text="Uruchom pomiar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/connectButton"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/channel_1_Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="40dp"
-        android:text="Odp:1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/connectButton" />
-
-    <Button
-        android:id="@+id/channel_2_Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="490dp"
-        android:layout_marginEnd="8dp"
-        android:text="Odp:2"
-        app:layout_constraintEnd_toStartOf="@+id/channe_3_Button"
-        app:layout_constraintStart_toEndOf="@+id/channel_1_Button"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/channe_3_Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="50dp"
-        android:text="Odp:3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/runMeasurementButton" />
-
-    <Button
-        android:id="@+id/saveToFileButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="50dp"
-        android:text="Zapis do pliku"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/readFromSdCardButton"
-        app:layout_constraintStart_toEndOf="@+id/saveToSdCardButton"
-        app:layout_constraintTop_toBottomOf="@+id/channel_2_Button" />
-
-    <Button
-        android:id="@+id/saveToSdCardButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="50dp"
-        android:text="Zapis SD"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/channel_1_Button" />
-
-    <Button
-        android:id="@+id/readFromSdCardButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="50dp"
-        android:text="Odczyt SD"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/channe_3_Button" />
-
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/chart"
         android:layout_width="405dp"
-        android:layout_height="331dp"
+        android:layout_height="356dp"
         android:layout_marginStart="3dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="51dp"
         android:layout_marginEnd="3dp"
-        android:layout_marginBottom="37dp"
-        app:layout_constraintBottom_toTopOf="@+id/connectButton"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="395dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/connectButton"
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Polacz" />
+
+        <Button
+            android:id="@+id/runMeasurementButton"
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Uruchom pomiar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="395dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/channel_1_Button"
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Odp1" />
+
+        <Button
+            android:id="@+id/channel_2_Button"
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Odp2" />
+
+        <Button
+            android:id="@+id/channel_3_Button"
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Odp3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="395dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/saveToSdCardButton"
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Zapis SD" />
+
+        <Button
+            android:id="@+id/saveToFileButton"
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Zapis do pliku" />
+
+        <Button
+            android:id="@+id/readFromSdCardButton"
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Odczyt SD" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
