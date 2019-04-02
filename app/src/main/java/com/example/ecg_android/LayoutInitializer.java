@@ -19,7 +19,7 @@ public class LayoutInitializer {
   //      toast.show();
 
         //Do wyświetlania wykresu
-        ChartController.getInstance().runChart(view);
+
 
 //
 //        //Rzeczy do zapisywania
