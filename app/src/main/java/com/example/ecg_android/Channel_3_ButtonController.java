@@ -4,11 +4,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class Channe_3_ButtonController extends AppCompatActivity implements Util_Button {
-    private static Util_Button instance = new Channe_3_ButtonController();
+public class Channel_3_ButtonController extends AppCompatActivity implements Util_Button {
+    private static Util_Button instance = new Channel_3_ButtonController();
     private final Button instanceButton;
     private final static int BUTTON_NAME = R.id.channel_3_Button;
-    private Channe_3_ButtonController(){
+    private Channel_3_ButtonController(){
         instanceButton = findViewById(BUTTON_NAME);
     }
     public static Util_Button getInstance(){

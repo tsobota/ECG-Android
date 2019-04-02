@@ -11,14 +11,15 @@ public class Channel_1_ButtonController extends AppCompatActivity implements Uti
     private Channel_1_ButtonController(){
         instanceButton = findViewById(BUTTON_NAME);
     }
-    public Util_Button getInstance(){
+    public static Util_Button getInstance(){
         return instance;
     }
     public Util_Button setOnClickAction(){
         instanceButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
             }
-        });
+        }
+        );
         return instance;
     }
 
