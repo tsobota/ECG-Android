@@ -37,14 +37,16 @@
             android:layout_width="53dp"
             android:layout_height="56dp"
             android:layout_weight="1"
-            android:text="Polacz" />
+            android:text="Polacz"
+            android:onClick="Click"/>
 
         <Button
             android:id="@+id/runMeasurementButton"
             android:layout_width="53dp"
             android:layout_height="56dp"
             android:layout_weight="1"
-            android:text="Uruchom pomiar" />
+            android:text="Uruchom pomiar"
+            android:onClick="Click"/>
     </LinearLayout>
 
     <LinearLayout
@@ -64,21 +66,24 @@
             android:layout_width="53dp"
             android:layout_height="56dp"
             android:layout_weight="1"
-            android:text="Odp1" />
+            android:text="Odp1"
+            android:onClick="Click"/>
 
         <Button
             android:id="@+id/channel_2_Button"
             android:layout_width="53dp"
             android:layout_height="56dp"
             android:layout_weight="1"
-            android:text="Odp2" />
+            android:text="Odp2"
+            android:onClick="Click"/>
 
         <Button
             android:id="@+id/channel_3_Button"
             android:layout_width="53dp"
             android:layout_height="56dp"
             android:layout_weight="1"
-            android:text="Odp3" />
+            android:text="Odp3"
+            android:onClick="Click"/>
     </LinearLayout>
 
     <LinearLayout
@@ -98,21 +103,24 @@
             android:layout_width="53dp"
             android:layout_height="56dp"
             android:layout_weight="1"
-            android:text="Zapis SD" />
+            android:text="Zapis SD"
+            android:onClick="Click"/>
 
         <Button
             android:id="@+id/saveToFileButton"
             android:layout_width="53dp"
             android:layout_height="56dp"
             android:layout_weight="1"
-            android:text="Zapis do pliku" />
+            android:text="Zapis do pliku"
+            android:onClick="Click"/>
 
         <Button
             android:id="@+id/readFromSdCardButton"
             android:layout_width="53dp"
             android:layout_height="56dp"
             android:layout_weight="1"
-            android:text="Odczyt SD" />
+            android:text="Odczyt SD"
+            android:onClick="Click"/>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
